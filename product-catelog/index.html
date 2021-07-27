@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Product Catelog</title>
+
+		<!-- Tailwind CSS CDN -->
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<div class="container lg:w-2/4 md:w-10/12 sm:w-10/12  mx-auto">
+			<div class="bg-gray-800 h-32 border border-green-600">
+				<h1 class="text-3xl font-bold text-center text-white pt-4">Product Catelog</h1>
+
+				<input id="filter-input" type="search" placeholder="Filter Your Product"
+					class="mx-auto block my-6 w-3/4 h-8 p-4 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent">
+			</div>
+
+			<div class="border border-green-200 lg:px-20 md:px-8 sm:px-4 px-2">
+
+				<span id="blank-item" class="text-red-700"></span>
+				<ul id="list-collection">
+
+					<!-- <li id="product-0" class="border border-green-600 px-4 py-2 rounded my-8">
+						<span id="productName" class="font-bold">Product Name Here</span>
+						=
+						<span id="productPrice">&dollar;298</span>
+
+						<i id="delete-product" class="fas fa-trash-alt float-right"></i>
+					</li> -->
+
+				</ul>
+
+				<form class="my-4">
+					<div class="flex justify-between">
+						<input id="product-name-input" type="text" placeholder="Product Name" class="border rounded p-3 h-8 w-5/12 focus:outline-none focus:border-transparent focus:border-green-600">
+
+						<input id="product-price-input" type="number" placeholder="Product Price" class="border rounded p-3 h-8 w-5/12 focus:outline-none focus:border-transparent focus:border-green-600">
+					</div>
+
+					<button id="add-product-btn" type="submit" class="border rounded h-10 w-full my-4 bg-green-600 hover:bg-green-800 text-white font-bold">Submit</button>
+				</form>
+			</div>
+
+
+		</div>
+
+
+
+		<script src="script.js"></script>
+
+		<!-- FontAwesome CDN -->
+		<script src="https://kit.fontawesome.com/6a7a03e364.js" crossorigin="anonymous"></script>
+
+	</body>
+
+</html>
